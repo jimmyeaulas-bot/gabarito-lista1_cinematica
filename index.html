@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caderno de Correção - Física I (Cinemática)</title>
-  
-  <!-- Fontes Google para efeito manuscrito -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Patrick+Hand&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonte Google (manuscrita) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Patrick+Hand&family=Fira+Code:wght@500&display=swap" rel="stylesheet" />
+
+  <!-- KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <a href="#conteudo-principal" class="skip">Pular para o conteúdo</a>
@@ -36,17 +39,17 @@
   </header>
 
   <main id="conteudo-principal">
-    <!-- Formulário/Quadro de Fórmulas de Referência Rápida -->
+    <!-- Quadro de Fórmulas -->
     <section class="card resumo-formulas">
       <div class="tape"></div>
       <div class="tape t2"></div>
       <h2>Quadro de Equações Disponíveis</h2>
       <div class="grade-equacoes" id="painel-equacoes">
-        <!-- Renderizado dinamicamente via JS a partir do DATABASE -->
+        <!-- Renderizado dinamicamente via JS -->
       </div>
     </section>
 
-    <!-- Contêiner onde as 5 questões da prova selecionada serão montadas -->
+    <!-- Lista de questões -->
     <section id="lista-questoes" aria-live="polite">
       <!-- Injetado pelo script.js -->
     </section>
@@ -60,6 +63,10 @@
       Física I &bull; Ensino Médio / Superior &bull; Método das Fases de Resolução
     </p>
   </footer>
+
+  <!-- KaTeX JS e auto-render -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
 
   <script src="script.js"></script>
 </body>
