@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caderno de Correção - Física I (Cinemática)</title>
+  
+  <!-- Fontes Google para efeito manuscrito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Patrick+Hand&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#conteudo-principal" class="skip">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="meta-header">
+      <span class="tag-prof">Prof. André Stefanini Jim</span>
+      <span class="prog" id="progresso-geral">0 / 25 Passos Feitos</span>
+    </div>
+    <h1>Caderno de Correção: Cinemática</h1>
+    <p class="sub">Guia interativo por etapas: <strong>I. Dados</strong> ➔ <strong>II. Equação</strong> ➔ <strong>III. Resolução</strong></p>
+
+    <!-- Menu de Seleção de Provas (Kits A a E) -->
+    <nav aria-label="Navegação entre Provas">
+      <ol id="abas-provas">
+        <li><button type="button" class="btn-aba ativa" data-prova="A">Prova A</button></li>
+        <li><button type="button" class="btn-aba" data-prova="B">Prova B</button></li>
+        <li><button type="button" class="btn-aba" data-prova="C">Prova C</button></li>
+        <li><button type="button" class="btn-aba" data-prova="D">Prova D</button></li>
+        <li><button type="button" class="btn-aba" data-prova="E">Prova E</button></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal">
+    <!-- Formulário/Quadro de Fórmulas de Referência Rápida -->
+    <section class="card resumo-formulas">
+      <div class="tape"></div>
+      <div class="tape t2"></div>
+      <h2>Quadro de Equações Disponíveis</h2>
+      <div class="grade-equacoes" id="painel-equacoes">
+        <!-- Renderizado dinamicamente via JS a partir do DATABASE -->
+      </div>
+    </section>
+
+    <!-- Contêiner onde as 5 questões da prova selecionada serão montadas -->
+    <section id="lista-questoes" aria-live="polite">
+      <!-- Injetado pelo script.js -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="postit azul">
+      <strong>Lembrete do Professor:</strong> Siga sempre o algoritmo das 3 fases. Não tente colocar valores na fórmula antes de listar os dados com suas respectivas unidades do S.I.!
+    </div>
+    <p style="text-align: center; font-size: 0.95rem; color: #5c6b8a; margin-top: 15px;">
+      Física I &bull; Ensino Médio / Superior &bull; Método das Fases de Resolução
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
